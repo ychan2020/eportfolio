@@ -170,6 +170,51 @@
 										Ding, W., Yan, Z. & Deng, R. (2016) A Survey on Future Internet Security Architectures. IEEE Access. [Accessed 13 February 2022].<br>
 									</p>
 								</ul>
+								<p><h3>Reflection Summary</h3></p>
+								<ul>
+									<p>
+										This module Network and Information Security Management covered the theory knowledge and practical usage about cybersecurity. Theory knowledge includes network evolution, legal and social, mitigation of cyber threats. Practical usage includes vulnerability, penetration tests and collaboration.<br><br>
+										
+										<b>Network Evolution</b><br>
+										The network is the fundamental and critical part of cyber security, the aim to build a safe and reliable network environment, we must understand the architecture and prevent the weakness.<br>
+										The lecture casts describe the network history and definitions since 1943 for UK allied forces war effort, the TCP/IP and ISO/OSI model using nowadays and the future trends of network technology. Besides the improvement of speed and usage, the architecture in the future is more focused on how the network package could support mobility and confidentiality. The network package could contain more information to enhance the data package including supporting seamless connection and having dynamic identification.<br>
+										By reading the technical articles from IEEE and Wi-Fi Alliance, understanding the need to develop new network architecture to support the growth of devices together with the Internet of Things (IoT) is the future trend. The cyber threat could be a huge impact and quickly spread in the future, there is an urgency for us to implement a secure network architecture and be ready to defend against those new threads.<br><br>
+
+										<b>Legal and Social issues</b><br>
+										The case studies in this module are mainly related to General Data Protection Regulation (GDPR), PCI Security Standards and Health Insurance Portability and Accountability Act (HIPAA).<br>
+										According to the case studies, mentioned that the impact of the data disclosure in the organization to the public society, the responsible of the organization and how they should react to minimize the impact with escalation action, stop service and Business Continuity Plan. During the discussion learnt the definition of the role and responsibility of data controllers and processors. As well as the decision of the Information Commissioner's Office (ICO) on the case with the highlight with the former employee. Most of the case studies appeared that it is common that the unsuccessful opt-out request was due to human error in which those organizations occurred.<br>
+										For better understanding, I had reviewed my Confidentiality and Non-Disclosure Clauses in Commercial Contracts to understand how it could control the risk. For the study of other rules, I chose the case which could be related to PCI Security Standards or HIPAA for the peer response.<br><br>
+
+										<b>Mitigation</b><br>
+										The Architecture of the system is the fundamental defence from the cyber threat. By research in Zero Trust Network and Microservice Architecture (Chris, 2021), is the new thread of development model providing isolated, small, and autonomous services network to mitigate the impact. For the software development, the project should break down into small parts and be required to shift to Zero Trust architecture.<br>
+										Using up-to-date software and regular patching is the best practice nowadays, End of Life software could not be able to prevent zero-day attacks. By updating the software agilely, I start to use containers and DevOps tools to update software and release more frequently. Moreover, having a staging environment and quick rollback to mitigate the new threat, system stability should not be an excuse to prevent web and application servers from updating regularly to mitigate the impact of vulnerabilities.<br>
+										The human factor is a difficult part to control and mitigate, organization contracts, policy and education could reduce the risk. On the other hand, we could adopt technology to prevent abusive behaviour as well. The case studies appeared that the significance to have personal information encryption or partially masked which could mitigate the inappropriate behaviour from employees. Moreover, the grant access process could be based on the principle of least privilege (PoLP) security concept (Cyberark, 2021) to limit employees with the least privilege (CISA, 2013).<br><br>
+
+										<b>Vulnerability</b><br>
+										During the module, I did research on the vulnerability in different areas including WiFi, operating system, database, and application. The high-risk vulnerability reported along with the proof of concept (POC) showed how the vulnerability could be exploited and impacted the system.<br>
+										In our executive summary, focusing to discuss the high Common Vulnerability Scoring System (CVSS) score vulnerabilities in SugarCRM, such as SQL Injection and Cross-Site Scripting (XSS). Though the target site implemented WAF, some of the malicious scripts can execute. These vulnerabilities could use attribute cookies or validate inputs or special characters filter to mitigate, however, there is still have chance to exploit if the filter library is not up to date. It showed the significance of the access right configuration and encryption of the data in the database setup. By checking the SugarCRM database, the user account password is being encrypted. Moreover, the password could add salt encryption to have stronger protection of the hash string (Brian, 2014).<br><br>
+
+										<b>Penetration Tests</b><br>
+										By examining the target site, give us a testing platform to perform case practice on penetration tests. There are sufficient recommendations and methods provided in the suggested articles.<br>
+										During my penetration test with Kali Linux, WAF blocked my IP addresses more than 20 times. Even I tried to use the proxy server and WAF bypass module, the false results were returned. I got the confident result until I set up the same version testing environment with the source code from Github (Matthew, 2018). It proved that the result could be more accurate if the system can be scanned locally, having internal testing which could simulate the attack by a malicious insider (Imperva, N.D.). It reflects the urgency when the zero-day vulnerability disclosed since the attacker are well tested on that impacted system. Nessus could be one of the quickest software to detect the vulnerability in the internal network by installing the new plugin, such as the Apache Log4j vulnerability that happened last year (Tenable, 2022).<br><br>
+
+										<b>Collaboration</b><br>
+										I am fortunate to be a part of this group that gives many contributions and has the same expectation to provide quality work. Tasks have been divided and assigned properly, having a timely output and all tasks could be finished on time. Nevertheless, the team was disharmony for a short period after the peer review result, it might be caused by the untransparent of the review result.<br>
+										During our discussion, we do not hesitate to share suggestions and knowledge. To learn from each other, I have demonstrated each tool that I tested in Kali Linux to my team member and suggested a way to prevent blocking the IP address when the WAF reCAPTCHA challenge failed with my working experience.<br>
+										Besides the group member, we have the charge to learn from participating in the learning discussion peer response, which inspected me to research in deep and critical thinking in the topics.<br><br>
+										
+										<b>References</b><br>
+										Brian, K. (July 25, 2014) Add a Salt with the SQL Server HASHBYTES Function. Sql Server Tip. Available from: https://www.mssqltips.com/sqlservertip/3293/add-a-salt-with-the-sql-server-hashbytes-function/ [Accessed 21 February 2022].<br>
+										Chris, R. (2021) What are microservices?. Microservice Architecture. Available from: https://microservices.io/index.html [Accessed 16 September 2021].<br>
+										CISA. (May 10, 2013) Least Privilege. Principles. Available from: https://www.cisa.gov/uscert/bsi/articles/knowledge/principles/least-privilege [Accessed 5 February 2022].<br>
+										Cyberark. (2021) Principle of Least Privilege. Cyberark Glossary. Available from: https://www.cyberark.com/what-is/least-privilege/ [Accessed 21 February 2022].<br>
+										IEEE. (N.D.) New Technology Connections: Future Directions. About. Available from: https://www.ieee.org/about/technologies.html [Accessed 21 February 2022].<br>
+										Imperva. (N.D.) Penetration Testing. AppSec. Available from: https://www.imperva.com/learn/application-security/penetration-testing/ [Accessed 13 January 2022].<br>
+										Matthew, P. 6 May 2018) SugarCRM-Community-Edition. Github. Available from: https://github.com/matthewpoer/SugarCRM-Community-Edition/tree/master/OldFiles [Accessed 9 February 2022].<br>
+										Tenable. (February 14, 2022) Apache Log4j < 2.15.0 Remote Code Execution (Nix). Nessus. Available from: https://www.tenable.com/plugins/nessus/155999 [Accessed 21 February 2022].<br>
+										Wi-Fi Alliance. (January 20, 2022) Wi-Fi Alliance 2022 Wi-Fi® trends. Newsroom. Available from: https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-2022-wi-fi-trends [Accessed 21 February 2022].<br>
+									</p>
+								</ul>
 								<a href="2NISM.html" class="button">Back</a>
 							</div>
 						</section>
